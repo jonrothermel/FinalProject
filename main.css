@@ -18,7 +18,6 @@
 }
 .main-header {
 	font-family: helvetica;
-	padding-top: 2rem;
 	color: rgb(239, 87, 57);
 	text-decoration: none;
 	font-size: 24px;
@@ -44,10 +43,9 @@
 	color: white;
 	font-size: 14px;
 	padding: .5rem;
-	border-radius: .25rem;
+	border-radius: .2rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	margin-bottom: 1rem;
 }
 .nav-button-contact {
 	font-family: helvetica;
@@ -59,7 +57,7 @@
 	color: white;
 	font-size: 14px;
 	padding: .5rem;
-	border-radius: .25rem;
+	border-radius: .2rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -89,7 +87,7 @@
 	text-decoration: none;
 	color: white;
 	font-size: 14px;
-	border-radius: .25rem;
+	border-radius: .2rem;
 	list-style-type: none;
 	margin: 1rem;
 	padding: 1rem;
@@ -103,7 +101,7 @@
 	text-decoration: none;
 	color: white;
 	font-size: 14px;
-	border-radius: .25rem;
+	border-radius: .2rem;
 	list-style-type: none;
 	margin: 1rem;
 	text-align: center;
