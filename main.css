@@ -8,6 +8,10 @@
 .active:hover {
 	text-decoration: underline;
 }
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: none;
+}
 .navbar-footer {
 	background-color: gray;
 	padding: 1rem;
@@ -79,9 +83,15 @@
 	color: black;
 	padding-top: 10px;
 }
-.neighborhood-header {
+.borough-header {
 	text-align: center;
 	padding-top: 3rem;
+}
+.neighborhood-header {
+	padding-left: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-bottom: 0px;
 }
 @media all and (max-width: 991px) {
 .show {
