@@ -1,6 +1,12 @@
+.body {
+	height: 100%;
+}
 .navbar {
 	height: 6rem;
 	padding: 2rem;
+}
+.active:hover {
+	text-decoration: underline;
 }
 .navbar-footer {
 	background-color: gray;
@@ -42,8 +48,8 @@
 .nav-link-text:hover {
 	color: white;
 }
-.body {
-	height: 100px;
+.spacing-div {
+	height: 200px;
 	padding: 3rem;
 }
 .col-sm {
@@ -61,6 +67,13 @@
 	padding-top: 10px;
 	padding-right: 1rem;
 	padding-left: 1rem;
+}
+.neighborhood-list-item:hover {
+	color: gray;
+	padding-top: 10px;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	text-decoration: underline;
 }
 .neighborhood-list-item:hover {
 	color: black;
