@@ -1,71 +1,93 @@
-<!DOCTYPE html>
-<html clas>
-<head>
-	<title>Location Compiler</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/icons8/ios7/512/Photo-Video-Movie-icon.png">
-</head>
-
-<header>
-<div>
-<nav  class="navbar-head">
-		<a href="#home" class="main-header"><h1 class="main-header">Location Compiler</h1></a>
-<button class="nav-button-about"><a href="#" class="nav-link-text">About</a></button>
-<button class="nav-button-contact"><a href="#" class="nav-link-text">Contact</a></button>
-</nav>
-</div>
-</header>
-<body>
-
-<div class="body">
-<p class="sub-header"><strong>Browse NYC Locations</strong></p>
-<ul class="outer borough-list">
-	<li class="nav-button-city">
-	Manhattan
-		<ul class="inner">
-			<li class="list-neighborhood"><a href="https://en.wikipedia.org/wiki/Little_Germany,_Manhattan" target="_blank">Little Germany (historic)</a></li>
-			<li class="list-neighborhood"><a href="https://en.wikipedia.org/wiki/Alphabet_City,_Manhattan" target="_blank">Alphabet City and Loisaida</a></li>
-			<li class="list-neighborhood"><a href="https://en.wikipedia.org/wiki/East_Village,_Manhattan" target="_blank">East Village</a></li>
-		</ul>
-		</li>
-	<li class="nav-button-city">Brooklyn
-	<ul class="inner">
-			<li class="list-neighborhood">Little Germany (historic)</li>
-			<li class="list-neighborhood">Alphabet City and Loisaida</li>
-			<li class="list-neighborhood">East Village</li>
-		</ul>
-		</li>
-	<li class="nav-button-city">Queens
-	<ul class="inner">
-			<li class="list-neighborhood">Little Germany (historic)</li>
-			<li class="list-neighborhood">Alphabet City and Loisaida</li>
-			<li class="list-neighborhood">East Village</li>
-		</ul>
-		</li>
-	<li class="nav-button-city">Harlem
-	<ul class="inner">
-			<li class="list-neighborhood">Little Germany (historic)</li>
-			<li class="list-neighborhood">Alphabet City and Loisaida</li>
-			<li class="list-neighborhood">East Village</li>
-		</ul>
-		</li>
-	<li class="nav-button-city">Bronx
-	<ul class="inner">
-			<li class="list-neighborhood">Little Germany (historic)</li>
-			<li class="list-neighborhood">Alphabet City and Loisaida</li>
-			<li class="list-neighborhood">East Village</li>
-		</ul>
-		</li>
-</div>
-
-</body>
-<footer>
-	<div class="navbar-footer">
-<nav  class="navbar-footer">
-<button class="nav-button-about"><a href="#" class="nav-link-text">About</a></button>
-<button class="nav-button-contact"><a href="#" class="nav-link-text">Contact</a></button>
-<button class="nav-button-contact"><a href="#" class="nav-link-text">Become A Contributor</a></button>
-</nav>
-</div>
-</footer>
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Location Compiler</title>
+      <link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/icons8/ios7/512/Photo-Video-Movie-icon.png">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+       <link href="https://code.jboxcdn.com/0.4.9/jBox.css" rel="stylesheet">
+      <!-- My CSS -->
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <!-- jBox CSS -->
+     
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#"><strong>Location Compiler</strong></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav my-header">
+               <a class="nav-item nav-link active" href="#">Manhattan<span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link active" href="#">Brooklyn<span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link active" href="#">Queens<span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link active" href="#">Bronx<span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link active" href="#">Harlem<span class="sr-only">(current)</span></a>
+            </div>
+         </div>
+      </nav>
+      <h2 class="neighborhood-header"><strong class="js-my-modal">MANHATTAN</strong></h2>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm">
+               <ol class="neighborhood-list">
+                  <li data-test="1" class="neighborhood-list-item js-modal-downtown-manhattan">Downtown Manhattan</li>
+                  <li class="neighborhood-list-item">East Village</li>
+                  <li class="neighborhood-list-item">Little Germany</li>
+                  <li class="neighborhood-list-item">Alphabet City and Loisaida</li>
+                  <li class="neighborhood-list-item">East Village</li>
+                  <li class="neighborhood-list-item">Greenwich Village</li>
+                  <li class="neighborhood-list-item">NoHo</li>
+                  <li class="neighborhood-list-item">Bowery</li>
+               </ol>
+            </div>
+            <div class="col-sm">
+               <ol class="neighborhood-list">
+                  <li class="neighborhood-list-item">West Village</li>
+                  <li class="neighborhood-list-item">Lower East Side</li>
+                  <li class="neighborhood-list-item">SoHo</li>
+                  <li class="neighborhood-list-item">Nolita</li>
+                  <li class="neighborhood-list-item">Little Italy</li>
+                  <li class="neighborhood-list-item">Chinatown</li>
+                  <li class="neighborhood-list-item">Financial District</li>
+                  <li class="neighborhood-list-item">Five Points</li>
+               </ol>
+            </div>
+            <div class="col-sm">
+               <ol class="neighborhood-list">
+                  <li class="neighborhood-list-item">Cooperative Village</li>
+                  <li class="neighborhood-list-item">Two Bridges</li>
+                  <li class="neighborhood-list-item">Tribeca</li>
+                  <li class="neighborhood-list-item">Civic Center</li>
+                  <li class="neighborhood-list-item">Radio Row</li>
+                  <li class="neighborhood-list-item">South Street Seaport</li>
+                  <li class="neighborhood-list-item">Battery Park City</li>
+                  <li class="neighborhood-list-item">Little Italy</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+      <div class="body">
+      </div>
+      <div class="navbar-footer">
+         <nav  class="navbar-footer">
+            <a href="#" class="nav-button-about nav-link-text">About</a>
+            <a href="#" class="nav-button-contact nav-link-text">Contact</a>
+            <a href="#" class="nav-button-contact nav-link-text">Become A Contributor</a>
+         </nav>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <!-- jBox -->
+      <script src="https://code.jboxcdn.com/0.4.9/jBox.js"></script>
+      <!-- my JS -->
+      <script src="app.js"></script>
+   </body>
 </html>
