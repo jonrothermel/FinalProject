@@ -1,6 +1,7 @@
 const modal = function(url) {
 	const body = $('body')
 	body.css('overflow', 'hidden')
+	body.css('position', 'fixed')
 	const shim = $('<div></div>');
 	shim.css({
 		position: 'fixed',
@@ -27,6 +28,7 @@ const modal = function(url) {
 	close.click(function() {
 		shim.remove();
 		body.css('overflow', 'auto')
+		body.css('position', 'static')
 	})
 
 	const content = $('<section></section>')
