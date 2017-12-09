@@ -5,6 +5,24 @@
 	height: 6rem;
 	padding: 2rem;
 }
+.borough-container {
+	display: none;
+}
+
+.borough-container.borough--active {
+	display: block;
+}
+.paragraph {
+	padding-top: 2rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+}
+.paragraph-center {
+	padding-top: 2rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	text-align: center;
+}
 .active:hover {
 	text-decoration: underline;
 }
@@ -54,7 +72,6 @@
 }
 .spacing-div {
 	height: 200px;
-	padding: 3rem;
 }
 .col-sm {
 	padding-top: 0px;
@@ -98,20 +115,35 @@
 	background-color: white;
     z-index: 99999;
     padding: 20px;
+    border-bottom: solid lightgray;
 }
 .collapse {
 	background-color: white;
     z-index: 99999;
     padding: 20px;
     margin-top: 2rem;
+    border-bottom: solid lightgray;
 }
 .collapsing {
-	background-color: white;	
+	background-color: white;
+	z-index: 99999;	
 	padding: 20px;
 	margin-top: 2rem;
+	border-bottom: solid lightgray;
 }
 }
 
+.city-image {
+	display: block;
+	margin: auto;
+	max-width: 95%;
+	padding-top: 2rem;
+}
+.caption {
+	font-style: italic;
+	font-size: 12px;
+	padding-top: 1rem;
+}
 
 
 
