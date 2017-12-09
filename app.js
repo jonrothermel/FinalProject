@@ -19,7 +19,7 @@ const modal = function(e) {
 	close.text('X');
 	close.css({
 		cursor: 'pointer',
-		color: 'white',
+		color: 'black',
 		position: 'absolute',
 		top: 0,
 		right: 10,
@@ -31,19 +31,25 @@ const modal = function(e) {
 		body.css('position', 'static')
 	})
 
-	const content = $('<section></section>')
+	const content = $('<section class="fit-in-center"></section>')
 	content.css({
-		height: '80%',
-		width: '80%',
-		margin: '10% auto',
+		height: '100%',
+		width: '100%',
+		margin: '0 auto',
 		backgroundColor: 'white',
 		boxSizing: 'border-box',
 		overflow: 'scroll'
-		
-	})
 
-	shim.append(close)
+	});
+	content.html(`
+<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+   <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+</svg>
+	`)
+
+	
 	shim.append(content)
+	shim.append(close)
 	body.append(shim);
 
 	const currentNeighborhood = $(e.target).text()
@@ -60,7 +66,7 @@ const modal = function(e) {
 				const description = data[index].fields.description
 				const pictureUrl = (data[index].fields.picture[0].thumbnails.large.url)
 				const table = `
-	<div class="card mb-3">
+	<div class="card mb-3" style="padding-top:10px">
 	  <img class="card-img-top" src="${pictureUrl}" alt="image">
 	  <div class="card-body">
 	    <h4 class="card-title">${name}</h4>
