@@ -1,0 +1,263 @@
+.body {
+	height: 100%;
+}
+.navbar {
+	height: 6rem;
+	padding: 2rem;
+}
+.borough-container {
+	display: none;
+}
+
+.borough-container.borough--active {
+	display: block;
+}
+.paragraph {
+	padding-top: 2rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+}
+.paragraph-center {
+	padding-top: 2rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	text-align: center;
+}
+.active:hover {
+	text-decoration: underline;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: none;
+}
+.navbar-footer {
+	background-color: gray;
+	padding: 1rem;
+
+}
+.nav-button-about {
+	font-family: helvetica;
+	color: gray;
+	display: inline-block;
+	border: none;
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	padding: .5rem;
+	border-radius: .2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.nav-button-contact {
+	font-family: helvetica;
+	color: gray;
+	display: inline-block;
+	border: none;
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	padding: .5rem;
+	border-radius: .2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.nav-link-text {
+	color: white;
+	text-decoration: none;
+}
+.nav-link-text:hover {
+	color: white;
+}
+.spacing-div {
+	height: 200px;
+}
+.col-sm {
+	padding-top: 0px;
+}
+.container {
+	padding-top: 2rem;
+}
+.neighborhood-list {
+	list-style: none;
+	padding: 0px;
+}
+.neighborhood-list-item {
+	color: gray;
+	padding-top: 10px;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.neighborhood-list-item:hover {
+	color: gray;
+	padding-top: 10px;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	text-decoration: underline;
+}
+.neighborhood-list-item:hover {
+	color: black;
+	padding-top: 10px;
+}
+.borough-header {
+	text-align: center;
+	padding-top: 3rem;
+}
+.neighborhood-header {
+	padding-left: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-bottom: 0px;
+}
+@media all and (max-width: 991px) {
+.show {
+	background-color: white;
+    z-index: 99999;
+    padding: 20px;
+    border-bottom: solid lightgray;
+}
+.collapse {
+	background-color: white;
+    z-index: 99999;
+    padding: 20px;
+    margin-top: 2rem;
+    border-bottom: solid lightgray;
+}
+.collapsing {
+	background-color: white;
+	z-index: 99999;	
+	padding: 20px;
+	margin-top: 2rem;
+	border-bottom: solid lightgray;
+}
+}
+
+.city-image {
+	display: block;
+	margin: auto;
+	max-width: 95%;
+	padding-top: 2rem;
+}
+.caption {
+	font-style: italic;
+	font-size: 12px;
+	padding-top: 1rem;
+}
+
+
+.fit-in-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  25% {
+    stroke: #DE3E35;
+  }
+  50% {
+    stroke: #F7C223;
+  }
+  75% {
+    stroke: #1B9A59;
+  }
+  100% {
+    stroke: #4285F4;
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  25% {
+    stroke: #DE3E35;
+  }
+  50% {
+    stroke: #F7C223;
+  }
+  75% {
+    stroke: #1B9A59;
+  }
+  100% {
+    stroke: #4285F4;
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+
+
