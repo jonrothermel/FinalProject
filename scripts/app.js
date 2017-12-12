@@ -16,13 +16,15 @@ const modal = function(e) {
 	
 
 	const close = $("<div></div>")
-	close.text('X');
+	close.html(`<button type="button" class="close p-2" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>`);
 	close.css({
 		cursor: 'pointer',
 		color: 'black',
 		position: 'absolute',
-		top: 0,
-		right: 10,
+		top: 20,
+		right: 50,
 		fontSize: '36px'
 	})
 	close.click(function() {
